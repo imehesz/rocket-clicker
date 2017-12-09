@@ -1,14 +1,14 @@
 require("../../css/game.css");
 
+require("./stars.tag.html");
+
 var Controller = require("../controllers/GameController.js");
 
 <game>
   <div class="game">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+    <stars />
     <div id='title'>
       <div id="booker"></div>
       <span>
@@ -17,6 +17,7 @@ var Controller = require("../controllers/GameController.js");
       <div class="">
         <button type="button" name="button" class="btn">MEOW!</button>
       </div>
+      <p>Help Booker on his space adventure!</p>
     </div>
 
   </div>
