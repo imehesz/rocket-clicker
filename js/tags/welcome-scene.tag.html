@@ -1,0 +1,25 @@
+require("../../css/welcome-scene.css");
+
+var Controller = require("../controllers/WelcomeSceneController.js");
+
+<welcome-scene class="welcome-scene">
+  <div class="">
+    <div id='title'>
+      <div id="booker"></div>
+      <span>
+        ROCKET CLICKER
+      </span>
+      <div class="">
+        <button
+          onclick={ goAdventure }
+          type="button"
+          name="button"
+          class="btn">MEOW!
+        </button>
+      </div>
+      <p>Help Booker on his space adventure!</p>
+    </div>
+  </div>
+
+  new Controller(this);
+</welcome-scene>

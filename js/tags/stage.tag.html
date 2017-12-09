@@ -1,0 +1,16 @@
+require("../../css/stars.css");
+
+// Load all the scenes here
+require("./welcome-scene.tag.html");
+require("./adventure-scene.tag.html");
+require("./countdown-scene.tag.html");
+
+var Controller = require("../controllers/StageController.js");
+
+<stage>
+  <div class="">
+    <div id="scene-holder" class="" />
+  </div>
+
+  new Controller(this);
+</stage>

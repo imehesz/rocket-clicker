@@ -1,0 +1,9 @@
+@import "./core/main.css";
+
+.countdown-scene {
+  background-color: red;
+}
+
+.countdown-scene #title {
+  font-size: 75px;
+}

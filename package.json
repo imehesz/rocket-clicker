@@ -21,6 +21,7 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.9",
     "postcss-mixins": "^6.2.0",
+    "pubsub-js": "^1.5.7",
     "riot": "^3.7.4",
     "riotjs-loader": "^4.0.0",
     "style-loader": "^0.19.0",

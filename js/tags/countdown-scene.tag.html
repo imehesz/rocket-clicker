@@ -1,0 +1,16 @@
+require("../../css/countdown-scene.css");
+
+var Controller = require("../controllers/CountdownSceneController.js");
+
+<countdown-scene class="countdown-scene">
+  <div class="">
+    <div class="">
+      <div id='title'>
+        <span>
+          { timerStr }
+        </span>
+      </div>
+  </div>
+
+  new Controller(this);
+</countdown-scene>
