@@ -1,17 +1,6 @@
-YAWPAR
-=====
+ROCKET CLICKER
+==============
 
-**Y**et **A**nother **W**eb**P**ack **R**epo :)
-
-Includes
---------
-
-* jQuery
-* Lodash
-* WebPack
-* Autoprefixer
-* Babel
-* PostCSS
-* RiotJS
+Help Booker on his space adventure!
 
 v.0.1

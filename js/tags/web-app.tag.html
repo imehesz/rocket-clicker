@@ -1,17 +1,13 @@
 require ("../../css/core/main.css");
 
-require("./search-form.tag.html");
+require("./game.tag.html");
 
 var WebAppController = require("../controllers/WebAppController");
 
 <web-app>
   <div>
-    <h1>Web App</h1>
-    
-    <a href="https://google.com">Google.com</a>
-    
-    <search-form></search-form>
+    <game />
   </div>
-  
+
   new WebAppController(this);
 </web-app>
