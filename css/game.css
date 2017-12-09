@@ -74,7 +74,7 @@ html {
     background-image: url(/img/booker.png);
     background-size: 60%;
     background-repeat: no-repeat;
-    top: 33%;
+    top: -115px;
     position: absolute;
     left: 45%;
     width: 200px;
@@ -98,11 +98,12 @@ html {
 
 .btn {
   width: 25%;
-  color: red;
-  /* background-color: blue; */
+  background-color: rgba(0,0,0,0.75);
   height: 49px;
   display: inline-block;
-  color: white;
-  border: 10px;
+  color: gray;
   font-size: 24px;
+  border-width: thick;
+  border-color: gray;
+  outline: none;
 }
