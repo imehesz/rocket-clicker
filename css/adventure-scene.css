@@ -1,3 +1,14 @@
 .adventure-scene {
-  
+  color: white;
+}
+
+#ship {
+  background-image: url(/img/ship1.png);
+      width: 200px;
+      height: 200px;
+      background-size: 100%;
+      cursor: pointer;
+      position: absolute;
+      left: calc(50% - 100px);
+      bottom: 300px;
 }

@@ -4,7 +4,10 @@ var Controller = require("../controllers/AdventureSceneController.js");
 
 <adventure-scene class="adventure-scene">
   <div class="">
-    <button type="button" name="button">ADVENTURE</button>
+    Speed: { Math.round(speed) }
+    Distance: { distance }
+
+    <div id="ship" onclick={ speedUp }/>
   </div>
 
   new Controller(this);
