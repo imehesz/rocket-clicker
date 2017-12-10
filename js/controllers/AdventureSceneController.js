@@ -1,5 +1,8 @@
 var DefaultController = require("../core/DefaultController.js");
 
+const C = require("../core/Constants");
+const PS = require("pubsub-js");
+
 class AdventureSceneController extends DefaultController {
   riotInit() {
     super.riotInit();
@@ -8,15 +11,17 @@ class AdventureSceneController extends DefaultController {
     this.rs.speed = 0;
     this.rs.addons = [];
     this.rs.achievements = [];
-    const SLOWDOWN_CAP = 7;
-    let slowDownCap = SLOWDOWN_CAP;
+    let slowDownCap = C.game.SLOWDOWN_CAP;
 
     console.log("INIT FROM AdventureSceneController");
 
     this.rs.speedUp = (e) => {
       this.rs.speed = this.rs.speed + 1;
-      slowDownCap = SLOWDOWN_CAP;
+      slowDownCap = C.game.SLOWDOWN_CAP;
+
       e.preventDefault();
+
+      PS.publish(C.pubsub.SPEED_UP, {speed: this.rs.speed});
     };
 
     this.tickDistance = setInterval(() => {
@@ -28,6 +33,9 @@ class AdventureSceneController extends DefaultController {
         this.rs.update({
           speed: tmpSpeed
         });
+
+        // TODO if it's 0, only publish it once!
+        PS.publish(C.pubsub.SPEED_DOWN, {speed: this.rs.speed});
       }
     }, 1000);
   }

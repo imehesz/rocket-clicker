@@ -18,12 +18,12 @@ class CountdownSceneController extends DefaultController {
         timerStr: `00:0${timer/C.timer.SECOND}`
       });
 
-      let audio;
-
-      // meh
-      if (timer > C.timer.SECOND) audio = new Audio("../snd/censor-beep-01.mp3");
-      if (timer == C.timer.SECOND) audio = new Audio("../snd/censor-beep-4.mp3");
-      if (audio) audio.play();
+      // let audio;
+      //
+      // // meh
+      // if (timer > C.timer.SECOND) audio = new Audio("../snd/censor-beep-01.mp3");
+      // if (timer == C.timer.SECOND) audio = new Audio("../snd/censor-beep-4.mp3");
+      // if (audio) audio.play();
 
       if (timer <= 0) {
         clearInterval(countDown);

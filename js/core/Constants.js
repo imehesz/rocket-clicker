@@ -1,4 +1,7 @@
 var Constants = {
+  game: {
+    SLOWDOWN_CAP: 6 // in seconds
+  },
   timer: {
     SECOND: 1000
   },
@@ -10,7 +13,9 @@ var Constants = {
   },
 
   pubsub: {
-    CHANGE_SCENE: "changeScene"
+    CHANGE_SCENE: "changeScene",
+    SPEED_UP: "speedUp",
+    SPEED_DOWN: "speedDown"
   }
 };
 
